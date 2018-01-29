@@ -1,10 +1,10 @@
-﻿<%@ master language="C#" autoeventwireup="true" inherits="SiteMaster, App_Web_np0feyrl" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - iTech Provisions</title>
     <asp:PlaceHolder runat="server">      
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
@@ -67,7 +67,7 @@
                     </ul>
                 </nav>
             </div>
-            <asp:Image ID="Image1" runat="server" Height="74px" ImageUrl="~/Images/itech-logo.png" Width="191px" />
+            <asp:Image ID="Image1" runat="server" Height="100px" ImageUrl="~/Images/itech-logo.png" Width="200px" />
         </div>
     </header>
     <div id="body">
@@ -80,7 +80,7 @@
         <div class="content-wrapper">
             <div class="float-left">
                 <p>
-                    &copy; <%: DateTime.Now.Year %> - My ASP.NET Application
+                    &copy; <%: DateTime.Now.Year %> - Aditya Vichare Corporation
                 </p>
             </div>
         </div>
