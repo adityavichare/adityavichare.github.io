@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="EmployeeMasterPage.master.cs" Inherits="Account_MasterPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" Runat="Server">
+    <asp:Menu ID="Menu1" runat="server" BackColor="#2196F3" DynamicHorizontalOffset="4" Font-Names="Segoe UI" Font-Size="1.5em" ForeColor="#ecf0f1" Orientation="Horizontal" StaticSubMenuIndent="20px" Width="100%">
+        <DynamicHoverStyle BackColor="#03A9F4" ForeColor="White" />
+        <DynamicMenuItemStyle HorizontalPadding="40px" VerticalPadding="20px" />
+        <DynamicMenuStyle BackColor="#2196F3" />
+        <DynamicSelectedStyle BackColor="#03A9F4" />
+        <Items>
+            <asp:MenuItem Text="Dashboard" Value="Dashboard"></asp:MenuItem>
+            <asp:MenuItem Text="Employee" Value="Employee" Selectable="False">
+                <asp:MenuItem Text="Add Employee" Value="Add Employee"></asp:MenuItem>
+                <asp:MenuItem Text="Update Employee" Value="Update Employee"></asp:MenuItem>
+                <asp:MenuItem Text="Employee List" Value="Employee List"></asp:MenuItem>
+                
+                <asp:MenuItem Text="Employee Report" Value="Employee Report"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Client" Value="Client" Selectable="False">
+                
+                <asp:MenuItem Text="Add Client" Value="Add Client"></asp:MenuItem>
+                <asp:MenuItem Text="Update Client" Value="Update Client"></asp:MenuItem>
+                <asp:MenuItem Text="Remove Client" Value="Remove Client"></asp:MenuItem>
+                <asp:MenuItem Text="Client List" Value="Client List"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Project" Value="Project">
+                <asp:MenuItem Text="Add Project" Value="Add Project"></asp:MenuItem>
+                <asp:MenuItem Text="Update Project" Value="Update Project"></asp:MenuItem>
+                <asp:MenuItem Text="Remove Project" Value="Remove Project"></asp:MenuItem>
+                <asp:MenuItem Text="Project List" Value="Project List"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Pay Roll" Value="Pay Roll"></asp:MenuItem>
+            <asp:MenuItem Text="FAQ" Value="FAQ"></asp:MenuItem>
+        </Items>
+        <StaticHoverStyle BackColor="#03A9F4" ForeColor="White" />
+        <StaticMenuItemStyle HorizontalPadding="40px" VerticalPadding="20px" />
+        <StaticSelectedStyle BackColor="#03A9F4" />
+
+    </asp:Menu>
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+
+</asp:Content>
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
+   
+</asp:Content>
+
