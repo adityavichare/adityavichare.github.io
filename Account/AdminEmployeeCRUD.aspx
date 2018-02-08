@@ -48,7 +48,7 @@
                 <PagerStyle Height="2px" Font-Bold="True" Wrap="False" VerticalAlign="Middle" HorizontalAlign="Left" ForeColor="White" />
             </asp:GridView>
              <br />
-            <asp:SqlDataSource ID="SqlDataSourceEmployee" runat="server" ConnectionString="<%$ ConnectionStrings:gearstring %>" SelectCommand="SELECT * FROM [Employee] WHERE ([E_Name] LIKE '%' + @E_Name + '%')">
+            <asp:SqlDataSource ID="SqlDataSourceEmployee" runat="server" ConnectionString="<%$ ConnectionStrings:Data Source=den1.mssql6.gear.host;Initial Catalog=iechprovisions;User ID=itechprovisions;Password=Nj4s??HN72ko" providerName="System.Data.SqlClient"  %>" SelectCommand="SELECT * FROM [Employee] WHERE ([E_Name] LIKE '%' + @E_Name + '%')">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="txtSearch" DefaultValue=" " Name="E_Name" PropertyName="Text" Type="String" />
                 </SelectParameters>
